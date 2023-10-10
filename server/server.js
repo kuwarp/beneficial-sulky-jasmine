@@ -1,29 +1,3 @@
-// const express = require("express");
-// const path = require("path");
-// // const fs= require('fs')
-// const fs =require("fs")
-// const cors=require('cors')
-// const app = express();
-// app.use(cors())
-// const rawData = fs.readFileSync('movies_metadata.json');
-// const moviesData = JSON.parse(rawData);
-
-// app.get('/',(req,res)=>{
-// //    res.send('hello')
-//    res.json(moviesData)
-// })
-// // A test route to make sure the server is up.
-// app.get("/api/ping", (request, response) => {
-//   console.log("❇️ Received GET request to /api/ping");
-//   response.send("pong!");
-// });
-
-// // A mock route to return some data.
-// app.get("/api/movies", (request, response) => {
-//   console.log("❇️ Received GET request to /api/movies");
-//   response.json({ data: [{ id: 1, name: '1' }, { id: 2, name: '2' }] });
-// });
-
 
 
 const express = require('express');
@@ -42,9 +16,9 @@ app.get('/api/movie', (req, res) => {
   res.json(moviesData);
 });
 
-// Define an endpoint to get a movie by ID
 app.get('/api/movie/:id', (req, res) => {
-  const movieId = parseInt(req.params.id); // Parse the movie ID from the URL parameter
+  const movieId = parseInt(req.params.id);
+  
   const movie = moviesData.find(movie => movie.id === movieId);
 
   if (!movie) {
@@ -58,7 +32,7 @@ app.get('/api/movie/:id', (req, res) => {
 
 // Express port-switching logic
 let port;
-console.log("❇️ NODE_ENV is", process.env.NODE_ENV);
+console.log("❇️ NODE_ENV is", port);
 if (process.env.NODE_ENV === "production") {
   port = process.env.PORT || 3000;
   app.use(express.static(path.join(__dirname, "../build")));
