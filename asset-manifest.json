@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/beneficial-sulky-jasmine/static/css/main.1911bd29.css",
+    "main.js": "/beneficial-sulky-jasmine/static/js/main.807e2d47.js",
+    "static/js/787.0c3f432a.chunk.js": "/beneficial-sulky-jasmine/static/js/787.0c3f432a.chunk.js",
+    "static/media/img.png": "/beneficial-sulky-jasmine/static/media/img.35bd2fc7e585544547bf.png",
+    "index.html": "/beneficial-sulky-jasmine/index.html",
+    "main.1911bd29.css.map": "/beneficial-sulky-jasmine/static/css/main.1911bd29.css.map",
+    "main.807e2d47.js.map": "/beneficial-sulky-jasmine/static/js/main.807e2d47.js.map",
+    "787.0c3f432a.chunk.js.map": "/beneficial-sulky-jasmine/static/js/787.0c3f432a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1911bd29.css",
+    "static/js/main.807e2d47.js"
+  ]
+}
