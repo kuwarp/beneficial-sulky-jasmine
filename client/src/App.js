@@ -9,7 +9,7 @@ function App() {
  
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/api/movie`)
+    axios.get(`https://sulky.onrender.com/api/movie`)
       .then(response => {
         setMovies(response.data);
       })
@@ -19,7 +19,7 @@ function App() {
   }, []);
 
   const handleMovieClick = (movieId) => {
-    axios.get(`localhost:3001/api/movie/${movieId}`)
+    axios.get(`https://sulky.onrender.com/api/movie/${movieId}`)
       .then(response => {
         setSelectedMovie(response.data);
       })
